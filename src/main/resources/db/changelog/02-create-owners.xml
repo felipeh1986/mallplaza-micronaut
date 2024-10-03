@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+    <changeSet id="02" author="andres.hinestroza">
+        <comment>Inserting Books</comment>
+        <insert tableName="vehicle_owner">
+            <column name="id" value="1d188e32-503a-424b-9d2a-1433eddf7a2b"/>
+            <column name="document" value="RUT123135-4"/>
+            <column name="name" value="Andres Felipe"/>
+            <column name="lastname" value="Hinestroza"/>
+        </insert>
+        <insert tableName="vehicle">
+            <column name="id" value="62673a69-5b6d-439d-984d-045b8c2563dc"/>
+            <column name="patent" value="MNI335"/>
+            <column name="type" value="0"/>
+            <column name="color" value="Gray"/>
+            <column name="model" value="2024"/>
+            <column name="check_in_time" value="2024-10-02 14:30:40"/>
+            <column name="vehicle_owner_id" value="1d188e32-503a-424b-9d2a-1433eddf7a2b"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
