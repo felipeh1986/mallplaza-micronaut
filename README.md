@@ -32,7 +32,7 @@ With java
 > java -jar .\ms-java-mallplaza-0.1-all.jar
 
 With Docker
-> java -jar .\ms-java-mallplaza-0.1-all.jar
+> docker run -p 8080:8080 ms-java-mallplaza:latest
 
 
 # Rest API
